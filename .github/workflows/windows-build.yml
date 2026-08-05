@@ -1,0 +1,37 @@
+name: Windows build
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install --upgrade pip setuptools wheel
+      - run: python -m pip install -e ".[dev,build]"
+      - run: python -m compileall -q src tests scripts run.py
+      - run: ruff check src tests scripts run.py
+      - run: python -m pytest
+      - run: python scripts/validate_release.py --require-native
+      - run: pyinstaller --noconfirm --clean packaging/bouncebeat.spec
+      - shell: pwsh
+        run: Compress-Archive -Path 'dist/BounceBeat Studio/*' -DestinationPath 'dist/BounceBeat-Studio-Windows.zip' -CompressionLevel Optimal -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BounceBeat-Studio-Windows
+          path: |
+            dist/BounceBeat Studio
+            dist/BounceBeat-Studio-Windows.zip
+          if-no-files-found: error

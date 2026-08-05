@@ -1,0 +1,582 @@
+{
+  "format_version": 1,
+  "application_version": "1.5.4",
+  "name": "Obstacle Course",
+  "created_at": "2026-08-05T20:21:01.813804+00:00",
+  "modified_at": "2026-08-05T20:21:01.813808+00:00",
+  "scene": {
+    "logical_width": 1080.0,
+    "logical_height": 1920.0,
+    "objects": [
+      {
+        "id": "obj_f6659b77878b",
+        "name": "Top Wall",
+        "kind": "wall",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540.0,
+          960.0
+        ],
+        "rotation": 0.0,
+        "color": "#64748B",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 0,
+        "start": [
+          55,
+          55
+        ],
+        "end": [
+          1025.0,
+          55
+        ],
+        "thickness": 16.0,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 1100.0
+      },
+      {
+        "id": "obj_2ad2f33f45db",
+        "name": "Right Wall",
+        "kind": "wall",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540.0,
+          960.0
+        ],
+        "rotation": 0.0,
+        "color": "#64748B",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 1,
+        "start": [
+          1025.0,
+          55
+        ],
+        "end": [
+          1025.0,
+          1865.0
+        ],
+        "thickness": 16.0,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 1100.0
+      },
+      {
+        "id": "obj_6967060ea303",
+        "name": "Bottom Wall",
+        "kind": "wall",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540.0,
+          960.0
+        ],
+        "rotation": 0.0,
+        "color": "#64748B",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 2,
+        "start": [
+          1025.0,
+          1865.0
+        ],
+        "end": [
+          55,
+          1865.0
+        ],
+        "thickness": 16.0,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 1100.0
+      },
+      {
+        "id": "obj_1dadc20cae0e",
+        "name": "Left Wall",
+        "kind": "wall",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540.0,
+          960.0
+        ],
+        "rotation": 0.0,
+        "color": "#64748B",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 3,
+        "start": [
+          55,
+          1865.0
+        ],
+        "end": [
+          55,
+          55
+        ],
+        "thickness": 16.0,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 1100.0
+      },
+      {
+        "id": "obj_e17b1725abf4",
+        "name": "Bumper 1",
+        "kind": "bumper",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          250,
+          520
+        ],
+        "rotation": 0.0,
+        "color": "#FF4D6D",
+        "glow": 0.6,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 4,
+        "radius": 68,
+        "restitution": 1.15,
+        "impulse": 250.0
+      },
+      {
+        "id": "obj_8ad63d4f0214",
+        "name": "Bumper 2",
+        "kind": "bumper",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          830,
+          670
+        ],
+        "rotation": 0.0,
+        "color": "#FFD166",
+        "glow": 0.6,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 5,
+        "radius": 68,
+        "restitution": 1.15,
+        "impulse": 250.0
+      },
+      {
+        "id": "obj_3cf4be13d954",
+        "name": "Bumper 3",
+        "kind": "bumper",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          400,
+          1030
+        ],
+        "rotation": 0.0,
+        "color": "#06D6A0",
+        "glow": 0.6,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 6,
+        "radius": 68,
+        "restitution": 1.15,
+        "impulse": 250.0
+      },
+      {
+        "id": "obj_f1ddc6494d75",
+        "name": "Bumper 4",
+        "kind": "bumper",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          720,
+          1300
+        ],
+        "rotation": 0.0,
+        "color": "#118AB2",
+        "glow": 0.6,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 7,
+        "radius": 68,
+        "restitution": 1.15,
+        "impulse": 250.0
+      },
+      {
+        "id": "obj_cda7b6839437",
+        "name": "Rotating Bar 1",
+        "kind": "polygon",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540,
+          790
+        ],
+        "rotation": 0.0,
+        "color": "#8338EC",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 8,
+        "vertices": [
+          [
+            -120.0,
+            -14.0
+          ],
+          [
+            120.0,
+            -14.0
+          ],
+          [
+            120.0,
+            14.0
+          ],
+          [
+            -120.0,
+            14.0
+          ]
+        ],
+        "rotation_speed": 48,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 950.0
+      },
+      {
+        "id": "obj_f3f4986416d3",
+        "name": "Rotating Bar 2",
+        "kind": "polygon",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540,
+          1450
+        ],
+        "rotation": 0.0,
+        "color": "#06D6A0",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 9,
+        "vertices": [
+          [
+            -120.0,
+            -14.0
+          ],
+          [
+            120.0,
+            -14.0
+          ],
+          [
+            120.0,
+            14.0
+          ],
+          [
+            -120.0,
+            14.0
+          ]
+        ],
+        "rotation_speed": -36,
+        "restitution": 0.95,
+        "friction": 0.4,
+        "break_on_hit": false,
+        "break_strength": 950.0
+      },
+      {
+        "id": "obj_9e9b4bed9e04",
+        "name": "Portal A",
+        "kind": "portal",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          180,
+          1580
+        ],
+        "rotation": 0.0,
+        "color": "#FF4D6D",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 10,
+        "radius": 62,
+        "target_portal_id": "obj_5350f7973638",
+        "preserve_velocity": true,
+        "exit_speed_multiplier": 1.0,
+        "cooldown_ms": 350
+      },
+      {
+        "id": "obj_5350f7973638",
+        "name": "Portal B",
+        "kind": "portal",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          900,
+          310
+        ],
+        "rotation": 0.0,
+        "color": "#118AB2",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 11,
+        "radius": 62,
+        "target_portal_id": "obj_9e9b4bed9e04",
+        "preserve_velocity": true,
+        "exit_speed_multiplier": 1.0,
+        "cooldown_ms": 350
+      },
+      {
+        "id": "obj_3f72e27c53ac",
+        "name": "Course Ball",
+        "kind": "ball",
+        "visible": true,
+        "locked": false,
+        "group": "",
+        "position": [
+          540,
+          180
+        ],
+        "rotation": 0.0,
+        "color": "#FFD166",
+        "glow": 0.0,
+        "midi_track_ids": [],
+        "midi_channel": null,
+        "midi_trigger": true,
+        "z_index": 12,
+        "radius": 50,
+        "mass": 1.0,
+        "initial_velocity": [
+          220,
+          50
+        ],
+        "maximum_speed": 1800.0,
+        "gravity_scale": 1.0,
+        "restitution": 0.94,
+        "friction": 0.25,
+        "angular_velocity": 0.0,
+        "appearance": "glossy",
+        "reflections_enabled": true,
+        "reflection_strength": 0.85,
+        "reflection_size": 0.42,
+        "reflection_offset": [
+          -0.3,
+          -0.34
+        ],
+        "shading_strength": 0.3,
+        "outline_enabled": true,
+        "outline_color": "#FFFFFF",
+        "outline_opacity": 0.35,
+        "outline_width": 2.4,
+        "color_mode": "cycle",
+        "change_color_on_collision": true,
+        "change_color_on_note": true,
+        "trail_enabled": true,
+        "trail_length": 45,
+        "trail_thickness": 12.0,
+        "trail_opacity": 0.65,
+        "duplication_trigger": "none",
+        "duplication_mode": "velocity_variation",
+        "duplication_every_collisions": 1,
+        "duplication_strength_threshold": 250.0,
+        "duplication_target_id": null,
+        "duplication_midi_note": 60,
+        "duplication_interval_seconds": 1.0,
+        "duplication_beat_interval": 1.0,
+        "duplication_spawn_mode": "collision_position",
+        "duplication_spawn_target_id": null,
+        "duplication_spawn_position": [
+          540.0,
+          960.0
+        ],
+        "duplication_spawn_spread": 0.0,
+        "duplication_velocity_mode": "current",
+        "duplication_spawn_count": 1,
+        "remove_source_after_duplication": false,
+        "reset_generation_on_respawn": true,
+        "duplicate_velocity_variation": 0.25,
+        "duplicate_size_variation": 0.12,
+        "max_duplicates": 12,
+        "generation": 0,
+        "max_generation": 5,
+        "particles_enabled": true,
+        "particle_count": 18,
+        "lifetime_seconds": 0.0,
+        "collision_cooldown_ms": 80
+      }
+    ],
+    "physics": {
+      "gravity": [
+        0.0,
+        480.0
+      ],
+      "air_resistance": 0.995,
+      "simulation_speed": 1.0,
+      "physics_hz": 120,
+      "substeps": 2,
+      "continuous_collision_detection": true,
+      "max_collision_substeps": 20,
+      "collision_skin": 1.5,
+      "collision_iterations": 16,
+      "global_friction": 0.5,
+      "global_restitution": 0.92,
+      "maximum_speed": 2500.0,
+      "world_boundaries": true,
+      "wraparound": false,
+      "deterministic_seed": 1337,
+      "max_balls": 500,
+      "max_particles": 8000
+    },
+    "palette": {
+      "colors": [
+        "#FF4D6D",
+        "#FFD166",
+        "#06D6A0",
+        "#118AB2",
+        "#8338EC"
+      ],
+      "mode": "cycle",
+      "random_seed": 1337,
+      "background": "#0B1020",
+      "trail": "#FFFFFF",
+      "obstacle": "#CAD5E2",
+      "ring": "#9CA3FF",
+      "particle": "#FFFFFF",
+      "glow": "#FFFFFF",
+      "text": "#F8FAFC",
+      "guide": "#64748B",
+      "fade_seconds": 0.18
+    }
+  },
+  "midi_asset": {
+    "path": "",
+    "embedded_name": "",
+    "ticks_per_beat": 480,
+    "duration": 0.0,
+    "tracks": []
+  },
+  "selected_track_ids": [],
+  "midi_playback": {
+    "mapping_mode": "sequential",
+    "tempo_multiplier": 1.0,
+    "transpose": 0,
+    "octave_shift": 0,
+    "velocity_multiplier": 1.0,
+    "minimum_velocity": 1,
+    "maximum_velocity": 127,
+    "note_duration_ms": 180,
+    "sustain": false,
+    "loop": true,
+    "restart_on_simulation_restart": true,
+    "continue_position": false,
+    "reverse_order": false,
+    "shuffle_order": false,
+    "quantization": "off",
+    "scale_filter": "chromatic",
+    "instrument_override": null,
+    "channel_override": null,
+    "polyphony_limit": 64,
+    "chord_window_ms": 35,
+    "collision_cooldown_ms": 80,
+    "strength_controls_velocity": true,
+    "strength_controls_volume": false,
+    "strength_controls_duration": false,
+    "strength_controls_pitch": false,
+    "strength_controls_particles": true,
+    "strength_controls_glow": true,
+    "strength_controls_size": false,
+    "strength_controls_camera_shake": false
+  },
+  "audio": {
+    "backend": "auto",
+    "soundfont_path": "",
+    "audio_device": "default",
+    "master_volume": 0.8,
+    "sample_rate": 48000,
+    "buffer_size": 512,
+    "latency_ms": 30,
+    "fallback_waveform": "sine"
+  },
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "preview_scale": 0.5,
+    "background_color": "#0B1020",
+    "transparent": false,
+    "show_fps": true,
+    "show_grid": false,
+    "show_safe_area": false,
+    "preview_quality": "high"
+  },
+  "recording": {
+    "mode": "offline",
+    "duration_seconds": 30.0,
+    "container": "mp4",
+    "video_codec": "libx264",
+    "audio_codec": "aac",
+    "crf": 18,
+    "bitrate": "",
+    "audio_bitrate": "192k",
+    "output_path": "",
+    "hardware_encoder": "auto",
+    "include_audio": true,
+    "image_sequence": false,
+    "audio_only": false,
+    "video_only": false,
+    "preserve_partial": true
+  },
+  "camera": {
+    "mode": "static",
+    "pan": [
+      0.0,
+      0.0
+    ],
+    "zoom": 1.0,
+    "smoothing": 0.12,
+    "follow_object_id": null,
+    "shake_intensity": 0.0,
+    "framing": "portrait"
+  },
+  "timeline": {
+    "start_seconds": 0.0,
+    "end_seconds": 30.0,
+    "loop_start_seconds": 0.0,
+    "loop_end_seconds": 0.0,
+    "zoom": 1.0,
+    "scroll_seconds": 0.0
+  },
+  "embedded_midi": false,
+  "preset_name": "Obstacle Course",
+  "metadata": {}
+}
