@@ -28,7 +28,7 @@ jobs:
       - run: pyinstaller --noconfirm --clean packaging/bouncebeat.spec
       - shell: pwsh
         run: Compress-Archive -Path 'dist/BounceBeat Studio/*' -DestinationPath 'dist/BounceBeat-Studio-Windows.zip' -CompressionLevel Optimal -Force
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: BounceBeat-Studio-Windows
           path: |
